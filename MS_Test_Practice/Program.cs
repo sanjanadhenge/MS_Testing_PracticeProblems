@@ -10,7 +10,10 @@ namespace MS_Test_Practice
     {
        public static void Main(string[] args)
         {
-           
+           SwapCondition swapCondition = new SwapCondition();
+           string result = swapCondition.CheckRearrangement("noon", "moon");
+            Console.WriteLine(result);
+
         }
     }
 }

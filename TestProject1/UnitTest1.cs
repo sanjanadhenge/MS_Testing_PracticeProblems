@@ -16,6 +16,19 @@ namespace TestProject1
             int result2= purchaseList.SoldMore(arr);
             Assert.AreEqual(5,result2 );
         }
-        
+        [TestMethod]
+        public void TestMethod2()
+        {
+            SwapCondition swap = new SwapCondition();
+            string result = swap.CheckRearrangement("noon", "moon");
+            Assert.AreEqual("No", result);
+        }
+        [TestMethod]
+        public void TestMethod3()
+        {
+            SwapCondition swap = new SwapCondition();
+            string result = swap.CheckRearrangement("part", "trap");
+            Assert.AreEqual("Yes", result);
+        }
     }
 }
